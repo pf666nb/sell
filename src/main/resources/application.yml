@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.3.5/sell?characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+  jpa:
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+  redis:
+    host: 192.168.3.5
+    port: 6379
+    password:
+
+server:
+  context-path: /sell
+wechat:
+#  mpAppId: wxd898fcb01713c658
+#  mpAppSecret: 7a57e3c35c5c711c5bbee6084f963283
+  mpAppId: wx17c5c7866139e083
+  mpAppSecret: 7a57e3c35c5c711c5bbee6084f963283
+  zfmpAppId: wxd898fcb01713c658
+#  mpAppSecret: 29
+  mchId: 1483469312
+  mchKey: 098F6BCD4621D373CADE4E832627B4F6
+  keyPath: D:\var\weixin_cert\h5.p12
+  notifyUrl: http://jianyi.mynatapp.cc/sell/pay/notify
+  openAppId: wx6ad144e54af67d87
+  openAppSecret: 91a2ff6d38a2bbccfb7e9f9079108e2e
+projectUrl:
+  wechatMpAuthorzie: http://jianyi.mynatapp.cc
+  wecharOpenAuthorzie: http://jianyi.mynatapp.cc
+  sell: http://jianyi.mynatapp.cc
